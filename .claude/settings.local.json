@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv /Users/soulaymanenaji/Documents/dev/react/Users/soulaymanenaji/Documents/dev/react/todo-frontend /Users/soulaymanenaji/Documents/dev/react/todo-frontend && rm -rf /Users/soulaymanenaji/Documents/dev/react/Users)",
+      "Bash(sleep 5 && curl -s http://localhost:8080/api/todos 2>&1)",
+      "Bash(nvm list:*)",
+      "Bash(npm install:*)",
+      "Bash(curl -s -X POST http://localhost:8080/api/todos -H \"Content-Type: application/json\" -d '{\"title\":\"Ma première tâche\",\"description\":\"Test de lAPI\"}' | python3 -m json.tool)",
+      "Bash(cd /Users/soulaymanenaji/Documents/dev/react/todo-backend && mvn clean package -DskipTests 2>&1 | tail -10)",
+      "Bash(which gh:*)",
+      "Bash(gh auth:*)",
+      "Bash(cd /Users/soulaymanenaji/Documents/dev/react/todo-backend && gh repo create todo-backend --public --source=. --remote=origin --push 2>&1)",
+      "Bash(mkdir -p /Users/soulaymanenaji/Documents/dev/react/todolist && cp -r /Users/soulaymanenaji/Documents/dev/react/todo-backend /Users/soulaymanenaji/Documents/dev/react/todolist/backend && cp -r /Users/soulaymanenaji/Documents/dev/react/todo-frontend /Users/soulaymanenaji/Documents/dev/react/todolist/frontend)",
+      "Bash(gh repo:*)",
+      "Bash(brew services:*)",
+      "Bash(sleep 8 && curl -s http://localhost:8080/api-docs | python3 -m json.tool 2>&1 | head -60)",
+      "Bash(cd /Users/soulaymanenaji/Documents/dev/react/kanban && npm create vite@5 frontend -- --template react-ts 2>&1)",
+      "Bash(cd /Users/soulaymanenaji/Documents/dev/react/kanban/backend && mvn clean package -DskipTests -q 2>&1 | tail -8)",
+      "Bash(mvn clean:*)",
+      "Bash(sleep 8 && curl -s http://localhost:8080/api/columns && echo \"\" && cat /tmp/kanban-frontend.log | grep -E \"Local|Error|error\" | head -5)",
+      "Bash(sleep 8 && curl -s http://localhost:8080/api/columns)",
+      "Bash(sleep 7 && curl -s http://localhost:8080/api/columns)",
+      "Bash(open http://localhost:5174)",
+      "Bash(sleep 8 && curl -s -X POST http://localhost:8080/api/auth/register -H \"Content-Type: application/json\" -d '{\"username\":\"test\",\"password\":\"test123\"}' | python3 -m json.tool)",
+      "Bash(pkill -f \"kanban-backend\" 2>/dev/null; sleep 1; echo \"killed\")",
+      "Bash(sleep 5 && curl -s http://localhost:8080/api/boards -o /dev/null -w \"%{http_code}\")",
+      "Bash(sleep 6 && curl -s http://localhost:8080/api/boards -o /dev/null -w \"%{http_code}\")"
+    ]
+  }
+}

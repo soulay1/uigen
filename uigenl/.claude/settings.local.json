@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm audit:*)",
+      "Bash(node -e \"const p = require\\('./package.json'\\); console.log\\('next:', p.dependencies.next, '\\\\nai:', p.dependencies.ai\\)\")",
+      "Bash(npm install:*)",
+      "Bash(grep -r \"from 'ai\\\\|from \\\\\"ai\\\\|from '@ai-sdk\\\\|from \\\\\"@ai-sdk\" src/ -l 2>&1)",
+      "Bash(npm show:*)",
+      "Bash(npm run:*)",
+      "Bash(ls node_modules/@ai-sdk/ 2>&1 && node -e \"const p = require\\('./package.json'\\); console.log\\(JSON.stringify\\({...p.dependencies, ...p.devDependencies}, null, 2\\)\\)\" | grep -i ai)",
+      "Bash(node -e \"const ai = require\\('./node_modules/ai'\\); console.log\\(Object.keys\\(ai\\).filter\\(k => k.toLowerCase\\(\\).includes\\('chat'\\) || k.toLowerCase\\(\\).includes\\('use'\\)\\)\\)\")"
+    ]
+  }
+}
